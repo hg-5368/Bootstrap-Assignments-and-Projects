@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login!!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        
+
+        .h-custom {
+            height: calc(100% - 73px);
+        }
+
+       
+
+        #social-media{
+            text-decoration: none;
+        }
+        
+        #loginbutton {
+            text-decoration: None;
+            color: black;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        #signupbutton {
+            text-decoration: none;
+            color: black;
+            font-family: 'Raleway', sans-serif;
+
+
+        }
+
+        #carousel-text {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-shadow: 1px 1px 1px #1f2a1f;
+        }
+
+        #brandname {
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .search-form {
+            border: 2px solid white;
+            height: 6rem;
+            background-color: #646161;
+
+        }
+
+        .search-header {
+            color: brown;
+            text-align: center;
+        }
+
+        .form-label {
+            color: white;
+            font-size: large;
+        }
+
+        #to-text {
+            color: white;
+            margin-top: 3.5rem;
+            margin-right: -6rem;
+            margin-left: 1rem;
+        }
+
+        #final-btn {
+            margin-top: 2rem;
+            width: 15rem;
+        }
+
+        #btn-text {
+            text-decoration: none;
+            color: white;
+        }
+
+        .footer-box {
+            border: 2px solid white;
+            height: 2.5rem;
+            background-color: rgb(192, 24, 24);
+            color: white;
+            text-align: center;
+        }
+        #footer-text{
+            background-color:rgb(192, 24, 24);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-danger">
+        <div class="container-fluid">
+            <a href="home.html" class="navbar-brand" id="brandname">LifePartner.com</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto mb-2 b-lg-0">
+                    <li class="nav-item">
+                        <a href="home.html" class="nav-link " aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" root="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Find Match</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a href="male.html" class="dropdown-item">Male</a></li>
+                            <li><a href="female.html" class="dropdown-item">Female</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactus.html" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+                <form action="" class="d-flex">
+                    <input type="search" class="form-control me-2" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+                <button type="button" class="btn btn-warning mx-2 my-2 active" data-bs-toggle="modal"
+                    data-bs-target="#LoginModal"><a href="login.html" id="loginbutton">Login</a></button>
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#SignupModal"><a
+                        href="signup.html" id="signupbutton">Sign Up</a></button>
+            </div>
+        </div>
+    </nav>
+    <section class="vh-100">
+        <div class="container-fluid h-custom">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-md-9 col-lg-6 col-xl-5">
+                    <img src="https://images.unsplash.com/photo-1542042161784-26ab9e041e89?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aW5kaWFuJTIwZ3Jvb218ZW58MHx8MHx8&w=1000&q=80"
+                        class="img-fluid" alt="Sample image">
+                </div>
+                <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                    <form>
+                        <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+                            <p class="lead fw-normal mb-0 me-3">Sign in with</p>
+                            <button type="button" class="btn btn-primary btn-floating mx-1" id="social-media">
+                                <i class="bi bi-facebook"></i>
+                            </button>
+
+                            <button type="button" class="btn btn-primary btn-floating mx-1" id="social-media">
+                                <i class="bi bi-twitter"></i>
+                            </button>
+
+                            <button type="button" class="btn btn-primary btn-floating mx-1" id="social-media">
+                                <i class="bi bi-linkedin"></i>
+                            </button>
+                        </div>
+
+                        <div class="divider d-flex align-items-center my-4">
+                            <p class="text-center fw-bold mx-3 mb-0">Or</p>
+                        </div>
+
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                            <input type="email" id="form3Example3" class="form-control form-control-lg"
+                                placeholder="Enter a valid email address" />
+                            <label class="form-label" for="form3Example3">Email address</label>
+                        </div>
+
+                        <!-- Password input -->
+                        <div class="form-outline mb-3">
+                            <input type="password" id="form3Example4" class="form-control form-control-lg"
+                                placeholder="Enter password" />
+                            <label class="form-label" for="form3Example4">Password</label>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- Checkbox -->
+                            <div class="form-check mb-0">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+                                <label class="form-check-label" for="form2Example3">
+                                    Remember me
+                                </label>
+                            </div>
+                            <a href="#!" class="text-body">Forgot password?</a>
+                        </div>
+
+                        <div class="text-center text-lg-start mt-4 pt-2">
+                            <button type="button" class="btn btn-primary btn-lg"
+                                style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+                            <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="signup.html"
+                                    class="link-danger">Register</a></p>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div
+            class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 " id="footer-text">
+            <!-- Copyright -->
+            <div class="text-white mb-3 mb-md-0" >
+                
+                Copyright &copy; 2022. <em>All rights reserved</em> <strong>LifePartner.com</strong>.
+                
+            </div>
+            <!-- Copyright -->
+
+            <!-- Right -->
+            <div>
+                <a href="#!" class="text-white me-4" id="social-media">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="#!" class="text-white me-4" id="social-media">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="#!" class="text-white me-4" id="social-media">
+                    <i class="bi bi-google"></i>
+                </a>
+                <a href="#!" class="text-white" id="social-media">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </div>
+    </section>
+</body>
+
+</html>

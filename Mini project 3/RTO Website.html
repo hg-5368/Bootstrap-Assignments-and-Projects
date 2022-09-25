@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RTO Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        div.card:hover{
+            width: 250px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+        }
+
+
+        .first-symbol {
+
+            position: absolute;
+            top: 0px;
+            left: 425px;
+            cursor: pointer;
+
+
+        }
+
+        .first-symbo-alert {
+            position: absolute;
+            width: 405px;
+            top: 2.5rem;
+            left: 12px;
+        }
+
+        .second-symbol {
+
+            position: absolute;
+            top: 210px;
+            left: 425px;
+            cursor: pointer;
+
+        }
+
+        .second-symbol-alert {
+            position: absolute;
+            width: 405px;
+            top: 15.5rem;
+            left: 12px;
+        }
+
+
+        .third-symbol {
+
+            position: absolute;
+            top: 440px;
+            left: 425px;
+            cursor: pointer;
+
+        }
+
+        .third-symbol-alert {
+            position: absolute;
+            width: 405px;
+            top: 30rem;
+            left: 12px;
+        }
+
+        .fourth-symbol {
+
+            position: absolute;
+            top: 650px;
+            left: 425px;
+            cursor: pointer;
+
+        }
+
+        .fourth-symbol-alert {
+            position: absolute;
+            width: 405px;
+            top: 42.2rem;
+            left: 12px;
+        }
+
+        .fifth-symbol {
+
+            position: absolute;
+            top: 880px;
+            left: 425px;
+            cursor: pointer;
+        }
+
+        .fifth-symbol-alert {
+            position: absolute;
+            width: 405px;
+            top: 56rem;
+            left: 12px;
+        }
+
+
+        .sixth-symbol {
+
+            position: absolute;
+            top: 0px;
+            right: 425px;
+            cursor: pointer;
+
+        }
+
+        .sixth-symbol-alert {
+            position: absolute;
+            width: 405px;
+            top: 2.5rem;
+            right: 12px;
+        }
+
+        .seventh-symbol {
+
+            position: absolute;
+            top: 210px;
+            right: 425px;
+            cursor: pointer;
+
+        }
+
+        .seventh-symbol-alert {
+            position: absolute;
+            width: 405px;
+            top: 15.5rem;
+            right: 12px;
+        }
+
+
+        .eighth-symbol {
+
+            position: absolute;
+            top: 440px;
+            right: 425px;
+            cursor: pointer;
+
+        }
+
+        .eighth-symbol-alert {
+            position: absolute;
+            width: 405px;
+            top: 28.5rem;
+            right: 12px;
+
+        }
+
+        .ninth-symbol {
+
+            position: absolute;
+            top: 650px;
+            right: 425px;
+            cursor: pointer;
+
+
+        }
+
+        .ninth-symbol-alert {
+            position: absolute;
+            width: 405px;
+            top: 43rem;
+            right: 12px;
+        }
+
+
+        .tenth-symbol {
+
+            position: absolute;
+            top: 880px;
+            right: 425px;
+            cursor: pointer;
+
+        }
+
+
+        .tenth-symbol-alert {
+            position: absolute;
+            width: 405px;
+            top: 57rem;
+            right: 12px;
+        }
+
+        a {
+            text-decoration: none;
+            color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text-center">
+        <img src="Images/road-image.png" height="1000px" alt="Image" style="margin-bottom: 10rem;">
+    </div>
+    <div class="first-symbol">
+        <div class="card" style="width: 10rem;height:10rem;border: 2px groove red;">
+            <img src="Images/stop-image.jpg" height="200px" width="100px" class="card-img-top" alt="Image" />
+            <div class="text-center">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Stop Symbol">
+                    <i class="bi bi-info-circle"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="first-symbo-alert">
+        <div class="alert alert-danger alert-dismissible fade show">
+            The sign indicates that the drivers must stop right there at their place.
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    </div>
+
+
+    <div class="second-symbol">
+        <div class="card" style="width: 10rem;height:10rem;border: 2px groove red;">
+            <img src="Images/give-way.jpg" height="200px" width="100px" class="card-img-top" alt="Image" />
+            <div class="text-center">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Give Way Symbol">
+                    <i class="bi bi-info-circle"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="second-symbol-alert">
+        <div class="alert alert-danger alert-dismissible fade show">
+            The sign is used to give a direction to the traffic to give way to right side drivers.
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    </div>
+
+    <div class="third-symbol">
+        <div class="card" style="width: 10rem;height:10rem;border: 2px groove red;">
+            <img src="Images/Speed_Limit.jpg" height="200px" width="100px" class="card-img-top" alt="Image" />
+            <div class="text-center">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Speed Limit Symbol">
+                    <i class="bi bi-info-circle"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="third-symbol-alert">
+        <div class="alert alert-danger alert-dismissible fade show">
+            Whatever number the sign carries, the driver should limit his speed accordingly.
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    </div>
+
+
+    <div class="fourth-symbol">
+        <div class="card" style="width: 10rem;height:10rem;border: 2px groove red;">
+            <img src="Images/Horn-Prohibited.jpg" height="200px" width="100px" class="card-img-top" alt="Image" />
+            <div class="text-center">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Horn Prohibition Symbol">
+                    <i class="bi bi-info-circle"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="fourth-symbol-alert">
+        <div class="alert alert-danger alert-dismissible fade show">
+            When there’s no requirement of honking, then this sign is put so that the drivers should respect the silence
+            and do not use horn.
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    </div>
+
+    <div class="fifth-symbol">
+        <div class="card" style="width: 10rem;height:10rem;border: 2px groove red;">
+            <img src="Images/over-taking.jpg" height="200px" width="100px" class="card-img-top" alt="Image" />
+            <div class="text-center">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Over-taking not allowed Symbol">
+                    <i class="bi bi-info-circle"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="fifth-symbol-alert">
+        <div class="alert alert-danger alert-dismissible fade show">
+            Sometimes, at highways or where the roads are narrow or at bridges, overtaking proves to be extremely
+            dangerous. The signs are put over these kind of places to ensure safety.
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    </div>
+
+
+    <div class="sixth-symbol">
+        <div class="card" style="width: 10rem;height:10rem;border: 2px groove red;">
+            <img src="Images/no-parking.png" height="200px" width="100px" class="card-img-top" alt="Image" />
+            <div class="text-center">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="No Parking Symbol">
+                    <i class="bi bi-info-circle"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="sixth-symbol-alert">
+        <div class="alert alert-danger alert-dismissible fade show">
+            Restricts parking of vehicles in areas marked with this sign.
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    </div>
+
+
+    <div class="seventh-symbol">
+        <div class="card" style="width: 10rem;height:10rem;border: 2px groove red;">
+            <img src="Images/Narrow-Bridge.jpg" height="200px" width="100px" class="card-img-top" alt="Image" />
+            <div class="text-center">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Narrow Bridge Ahead Symbol">
+                    <i class="bi bi-info-circle"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="seventh-symbol-alert">
+        <div class="alert alert-danger alert-dismissible fade show">
+            This sign board is erected before there’s a narrow bridge ahead.
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    </div>
+
+
+    <div class="eighth-symbol">
+        <div class="card" style="width: 10rem;height:10rem;border: 2px groove red;">
+            <img src="Images/Left-Reverse-Band.jpg" height="200px" width="100px" class="card-img-top" alt="Image" />
+            <div class="text-center">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Left Reverse Band Symbol">
+                    <i class="bi bi-info-circle"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="eighth-symbol-alert">
+        <div class="alert alert-danger alert-dismissible fade show">
+            This Z-shaped sign indicates the same Z-shaped formation of the road ahead towards the left. This cautions
+            the driver the reduce the speed.
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    </div>
+
+    <div class="ninth-symbol">
+        <div class="card" style="width: 10rem;height:10rem;border: 2px groove red;">
+            <img src="Images/right hand.jpg" height="200px" width="100px" class="card-img-top" alt="Image" />
+            <div class="text-center">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Right Hand Curve Symbol">
+                    <i class="bi bi-info-circle"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="ninth-symbol-alert">
+        <div class="alert alert-danger alert-dismissible fade show">
+            It notifies about a right hand curve on the way forward.
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    </div>
+
+    <div class="tenth-symbol">
+        <div class="card" style="width: 10rem;height:10rem;border: 2px groove red;">
+            <img src="Images/Left-Hand-Curve.jpg" height="200px" width="100px" class="card-img-top" alt="Image" />
+
+            <!--for tooltip-->
+            <div class="text-center">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Left Hand Curve Symbol">
+                    <i class="bi bi-info-circle"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="tenth-symbol-alert">
+        <div class="alert alert-danger alert-dismissible fade show">
+            It notifies about a left hand curve on the way forward.
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    </div>
+
+</body>
+
+</html>

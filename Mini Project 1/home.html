@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FindPartner.com</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #loginbutton {
+      text-decoration: None;
+      color: black;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    #signupbutton {
+      text-decoration: none;
+      color: black;
+      font-family: 'Raleway', sans-serif;
+
+
+    }
+
+    #carousel-text {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      text-shadow: 1px 1px 1px #1f2a1f;
+    }
+
+    #brandname {
+      font-family: 'Raleway', sans-serif;
+    }
+
+    .search-form {
+      border: 2px solid white;
+      height: 6rem;
+      background-color: #646161;
+
+    }
+
+    .search-header {
+      color: brown;
+      text-align: center;
+    }
+
+    .form-label {
+      color: white;
+      font-size: large;
+    }
+
+    #to-text {
+      color: white;
+      margin-top: 3.5rem;
+      margin-right: -6rem;
+      margin-left: 1rem;
+    }
+
+    #final-btn {
+      margin-top: 2rem;
+      width: 15rem;
+    }
+
+    #btn-text {
+      text-decoration: none;
+      color: white;
+    }
+    .footer-box{
+      border: 2px solid white;
+      height: 5rem;
+      background-color: rgb(192, 24, 24);
+      color: white;
+      text-align: center;
+    }
+    .footer-text{
+      margin-top: 1.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-danger">
+    <div class="container-fluid">
+      <a href="home.html" class="navbar-brand" id="brandname">LifePartner.com</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav me-auto mb-2 b-lg-0">
+          <li class="nav-item">
+            <a href="home.html" class="nav-link active" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" root="button"
+              data-bs-toggle="dropdown" aria-expanded="false">Find Match</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a href="male.html" class="dropdown-item">Male</a></li>
+              <li><a href="female.html" class="dropdown-item">Female</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="contactus.html" class="nav-link">Contact Us</a>
+          </li>
+        </ul>
+        <form action="" class="d-flex">
+          <input type="search" class="form-control me-2" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+        <button type="button" class="btn btn-warning mx-2 my-2" data-bs-toggle="modal" data-bs-target="#LoginModal"><a
+            href="login.html" id="loginbutton">Login</a></button>
+        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#SignupModal"><a
+            href="signup.html" id="signupbutton">Sign Up</a></button>
+      </div>
+    </div>
+  </nav>
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Images/carousel3.jpg" class="d-block w-100" alt="sampleimage" height="500px">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="font-family: Verdana, Geneva, Tahoma, sans-serif; text-shadow: 1px 1px 1px black">The World's No.1
+            Matrimonial Service</h5>
+          <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;text-shadow: 1px 1px 1px black">Best Place to find
+            perfect match!!!</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Images/carousel2.jpg" class="d-block w-100" alt="sampleimage" height="500px">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="font-family:Verdana, Geneva, Tahoma, sans-serif;">Ready to embarked on the journey called
+            "marriage"??</h5>
+          <p style="font-family:Verdana, Geneva, Tahoma, sans-serif;">If yes, then this is the right place</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Images/carousel1.jpg" class="d-block w-100" alt="sampleimage" height="500px">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="font-family:Verdana, Geneva, Tahoma, sans-serif;">Let us help you get hitched!</h5>
+          <p style="font-family:Verdana, Geneva, Tahoma, sans-serif;">When you want it all… we help you find it.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Images/carousel4.jpg" class="d-block w-100" alt="sampleimage" height="500px">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="font-family: Verdana, Geneva, Tahoma, sans-serif;text-shadow: 1px 1px 1px black">Finding your
+            perfect match just became easier</h5>
+          <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;text-shadow: 1px 1px 1px black">Your search for the
+            perfect match ends here!
+          </p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <br>
+  <h3 class="search-header">#BeChoosy with India’s Biggest Matrimony Service</h3>
+  <div class="search-form">
+    <form action="" class="row g-3 needs-validation">
+      <div class="col-md-2">
+        <label for="validationCustom01" class="form-label" style="margin-left: 1rem;">I'm looking for a</label>
+        <select class="form-select" id="validationCustom04" required style="margin-left:1rem;">
+          <option selected>Select</option>
+          <option value="1">Woman</option>
+          <option value="2">Man</option>
+        </select>
+        <div class="invalid-feedback">
+          Please select a valid option.
+        </div>
+      </div>
+      <div class="col-md-1">
+        <label for="validationCustom01" class="form-label" style="margin-left:1rem;">aged</label>
+        <select class="form-select" id="validationCustom04" required style="margin-left:1rem;">
+          <option selected>Select</option>
+          <option value="1">21</option>
+          <option value="2">22</option>
+          <option value="3">23</option>
+          <option value="4">24</option>
+          <option value="5">25</option>
+          <option value="6">26</option>
+          <option value="7">27</option>
+          <option value="8">28</option>
+          <option value="9">29</option>
+          <option value="10">30</option>
+          <option value="11">31</option>
+          <option value="12">32</option>
+          <option value="13">33</option>
+          <option value="14">34</option>
+          <option value="15">35</option>
+          <option value="16">36</option>
+          <option value="17">37</option>
+          <option value="18">38</option>
+          <option value="19">39</option>
+          <option value="20">40</option>
+          <option value="21">41</option>
+          <option value="22">42</option>
+          <option value="23">43</option>
+          <option value="24">44</option>
+          <option value="25">45</option>
+          <option value="26">46</option>
+          <option value="27">47</option>
+          <option value="28">48</option>
+          <option value="29">49</option>
+          <option value="30">50</option>
+        </select>
+      </div>
+      <div class="col-md-1" id="to-text">to</div>
+      <div class="col-md-1">
+        <select class="form-select" id="validationCustom04" required style="margin-top:2.2rem;">
+          <option selected>Select</option>
+          <option value="1">21</option>
+          <option value="2">22</option>
+          <option value="3">23</option>
+          <option value="4">24</option>
+          <option value="5">25</option>
+          <option value="6">26</option>
+          <option value="7">27</option>
+          <option value="8">28</option>
+          <option value="9">29</option>
+          <option value="10">30</option>
+          <option value="11">31</option>
+          <option value="12">32</option>
+          <option value="13">33</option>
+          <option value="14">34</option>
+          <option value="15">35</option>
+          <option value="16">36</option>
+          <option value="17">37</option>
+          <option value="18">38</option>
+          <option value="19">39</option>
+          <option value="20">40</option>
+          <option value="21">41</option>
+          <option value="22">42</option>
+          <option value="23">43</option>
+          <option value="24">44</option>
+          <option value="25">45</option>
+          <option value="26">46</option>
+          <option value="27">47</option>
+          <option value="28">48</option>
+          <option value="29">49</option>
+          <option value="30">50</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <label for="validationCustom04" class="form-label">of religion</label>
+        <select class="form-select" id="validationCustom04" required>
+          <option selected>--Select--</option>
+          <option value="1">Hindu</option>
+          <option value="2">Muslim</option>
+          <option value="3">Christian</option>
+          <option value="4">Sikh</option>
+          <option value="5">Parsi</option>
+          <option value="6">Jain</option>
+          <option value="7">Buddhist</option>
+          <option value="8">Jewish</option>
+          <option value="9">Others</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <label for="validationCustom04" class="form-label">and mother tongue</label>
+        <select class="form-select" id="validationCustom04" required>
+          <option value="1">--Select--</option>
+          <option value="2">Hindi</option>
+          <option value="3">Marathi</option>
+          <option value="4">Bengali</option>
+          <option value="5">Punjabi</option>
+          <option value="6">Gujrati</option>
+          <option value="7">Marwari</option>
+          <option value="8">Oriya</option>
+          <option value="9">English</option>
+          <option value="10">Telugu</option>
+          <option value="11">Kannada</option>
+          <option value="12">Bhojpuri</option>
+          <option value="13">Awadhi</option>
+          <option value="14">Magahi</option>
+          <option value="15">Maithali</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <button class="btn btn-primary" type="submit" id="final-btn"><a href="#" id="btn-text">Let's Begin</a></button>
+      </div>
+    </form>
+  </div>
+  <br>
+  <h4 style="color:brown;font-family: 'Raleway', sans-serif;margin-left: 20px;">Searching for grooms?? Check here!!</h4>
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-md-3">
+
+        <div class="card" style="width:18rem;">
+          <img src="Images/male1.jfif" alt="male Image" class="card-img-top" height="350px" width="250px">
+          <div class="card-body">
+            <center>
+              <h4 class="card-title">Atul Bhardwaj</h4>
+              <p class="card-text">I am a businessman, loves to travel, a fitness freak. <br> Age:29</p>
+
+              <a href="#" class="btn btn-primary" style="width:7rem; ">View Profile</a>
+              <a href="#" class="btn btn-warning" style="width:7rem; ">Contact</a>
+            </center>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+
+        <div class="card" style="width:18rem;">
+          <img src="Images/male2.jpg" alt="male Image" class="card-img-top" height="350px">
+          <div class="card-body">
+            <center>
+              <h4 class="card-title">Sohan Bhuchasia</h4>
+              <p class="card-text">I am a Software Engineer, loves to explore new things. <br> Age:31</p>
+
+              <a href="#" class="btn btn-primary" style="width:7rem; ">View Profile</a>
+              <a href="#" class="btn btn-warning" style="width:7rem; ">Contact</a>
+            </center>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+
+        <div class="card" style="width:18rem;">
+          <img src="Images/male3.jpg" alt="male Image" class="card-img-top" height="350px">
+          <div class="card-body">
+            <center>
+              <h4 class="card-title">Rohan Shetty</h4>
+              <p class="card-text">I am a teacher, I believe in present-day living yet pursue my social morals. <br> Age:28</p>
+
+              <a href="#" class="btn btn-primary" style="width:7rem; ">View Profile</a>
+              <a href="#" class="btn btn-warning" style="width:7rem; ">Contact</a>
+            </center>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+
+        <div class="card" style="width:18rem;">
+          <img src="Images/male4.jpg" alt="male Image" class="card-img-top" height="350px">
+          <div class="card-body">
+            <center>
+              <h4 class="card-title">Avinash Singh</h4>
+              <p class="card-text">I am an application developer, loves to spend more time with family and friends. <br> Age:32</p>
+
+              <a href="#" class="btn btn-primary" style="width:7rem; ">View Profile</a>
+              <a href="#" class="btn btn-warning" style="width:7rem; ">Contact</a>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="text-right" style="margin-left:81rem;">
+    <button class="btn btn-primary" type="button"><a href="male.html" style="text-decoration: none;color:white; ">View More</a></button>
+  </div>
+  <br>
+  <hr>
+  <h4 style="color:brown;font-family: 'Raleway', sans-serif;margin-left: 20px;">Searching for brides?? Check here!!</h4>
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-md-3">
+
+        <div class="card" style="width:18rem;">
+          <img src="Images/female1.jpg" alt="male Image" class="card-img-top" height="350px" width="250px">
+          <div class="card-body">
+            <center>
+              <h4 class="card-title">Swati Sharma</h4>
+              <p class="card-text">I am a Career oriented girl, I like to cook new cuisines. <br> Age:26</p>
+
+              <a href="#" class="btn btn-primary" style="width:7rem; ">View Profile</a>
+              <a href="#" class="btn btn-warning" style="width:7rem; ">Contact</a>
+            </center>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+
+        <div class="card" style="width:18rem;">
+          <img src="Images/female2.jpg" alt="male Image" class="card-img-top" height="350px">
+          <div class="card-body">
+            <center>
+              <h4 class="card-title">Ayushi Chauhan</h4>
+              <p class="card-text">I am IT professional based in Mumbai, working in as a senior software engineer. <br> Age:31</p>
+
+              <a href="#" class="btn btn-primary" style="width:7rem; ">View Profile</a>
+              <a href="#" class="btn btn-warning" style="width:7rem; ">Contact</a>
+            </center>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+
+        <div class="card" style="width:18rem;">
+          <img src="Images/female3.jfif" alt="male Image" class="card-img-top" height="350px">
+          <div class="card-body">
+            <center>
+              <h4 class="card-title">Sharbary Banerjee</h4>
+              <p class="card-text">I am a teacher by profession and writing quotes is one of my hobby. <br> Age:25</p>
+
+              <a href="#" class="btn btn-primary" style="width:7rem; ">View Profile</a>
+              <a href="#" class="btn btn-warning" style="width:7rem; ">Contact</a>
+            </center>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+
+        <div class="card" style="width:18rem;">
+          <img src="Images/female4.jpg" alt="male Image" class="card-img-top" height="350px">
+          <div class="card-body">
+            <center>
+              <h4 class="card-title">Deepshikha Sawant</h4>
+              <p class="card-text">I am very open minded, cool, calm and caring person, loves to spend more time with family and friends. <br> Age:29</p>
+
+              <a href="#" class="btn btn-primary" style="width:7rem; ">View Profile</a>
+              <a href="#" class="btn btn-warning" style="width:7rem; ">Contact</a>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="text-right" style="margin-left:81rem;">
+    <button class="btn btn-primary" type="button"><a href="female.html" style="text-decoration: none;color:white; ">View More</a></button>
+  </div>
+  <footer>
+    
+    <div class="footer-box">
+      <p class="footer-text"> Copyright &copy; 2022 <em>All rights reserved</em> <strong>LifePartner.com</strong></p>
+      
+    </div>
+  </footer>
+</body>
+
+</html>
